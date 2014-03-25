@@ -117,7 +117,7 @@ fi
 # To do that it creates a new completion function called _apt_pref_$2
 #
 apt_pref_compdef() {
-    local f fb
+    local f
     f="_apt_pref_${2}"
 
     eval "function ${f}() {
