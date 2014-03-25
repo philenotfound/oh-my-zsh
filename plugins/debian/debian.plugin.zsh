@@ -218,7 +218,7 @@ kerndeb () {
 }
 
 # List packages by size
-function apt-list-packages {
+apt-list-packages () {
     dpkg-query -W --showformat='${Installed-Size} ${Package} ${Status}\n' | \
     grep -v deinstall | \
     sort -n | \
